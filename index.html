@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Swish Frontend Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+    <div>
+        <nav class="flex space-between align">
+            <div>
+                <img src="./swish-analytics.png" width="200" />
+            </div>
+
+            <!-- filters -->
+            <div>
+                <select id="position" onChange="getData('position')">
+                    <option value="">POSITION</option>
+                    <option value="PG">Point Guard</option>
+                    <option value="PF">Power Forward</option>
+                    <option value="SG">Shooting Guard</option>
+                    <option value="C">Center</option>
+                    <option value="SF">Small Forward</option>
+                </select>
+                <select id="stat-type" onChange="getData('stat-type')">
+                    <option value="">STAT TYPE</option>
+                    <option value="100">Points</option>
+                    <option value="102">Assists</option>
+                    <option value="103">Rebounds</option>
+                    <option value="104">Steals</option>
+                </select>
+                <select id="market-status" onChange="getData('market-status')">
+                    <option value="">MARKET STATUS</option>
+                    <option value="1">Suspended</option>
+                    <option value="0">Not Suspended</option>
+                </select>
+                <input 
+                    id="search-input" 
+                    placeholder="Player or Team name..."
+                />
+                <button 
+                    id="search-button" 
+                    style="height: 50px"
+                    onClick="getData('search')"><b>SEARCH</b>
+                </button>
+            </div>
+        </nav>
+
+        <!-- table -->
+        <div id="table-container"></div>
+    </div>
+
+    <!-- scripts -->
+    <script defer src="./app.js"></script>
+</body>
+
+</html>

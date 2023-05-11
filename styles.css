@@ -1,0 +1,107 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    padding: 25px;
+    background-color: #EEEEEE;
+}
+
+table {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 25px;
+    padding-top: 25px;
+}
+
+th {
+    width: 200px;
+    padding: 15px;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    border-bottom: 1px solid #dddddd;
+    color: #999999;
+}
+
+td {
+    text-align: center;
+    padding: 15px;
+}
+
+td:first-child {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+select {
+    margin-right: 5px;
+    height: 54px;
+    border-radius: 10px;
+    border: none;
+}
+
+input {
+    border-radius: 10px;
+    border: none;
+}
+
+#table-container {
+    width: 100%;
+}
+
+#search-input {
+    height: 50px;
+    padding: 0px 15px;
+    margin-right: 5px;
+}
+
+#search-button {
+    background-color: #0d83ff;
+    color: white;
+    border-radius: 10px;
+    min-width: 100px;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+}
+
+#search-button:hover {
+    background-color: #0d83ff;
+    opacity: .8;
+}
+
+#position-dropdown {
+    padding: 0px 15px;
+    margin-right: 5px;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+}
+
+.align {
+    align-items: center;
+}
+
+.end {
+    justify-content: end;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.player {
+    font-size: 30px;
+    padding-bottom: 0px;
+}
+
+.team {
+    font-size: 25px;
+    font-style: italic;
+}
